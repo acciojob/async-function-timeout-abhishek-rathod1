@@ -3,8 +3,9 @@
 
 // button.addEventListener("click", fxn(msg,dly));
 
-	document.getElementById("output").innerHTML = "";
+// document.getElementById("output").textContent = "";
 async function fxn(){
+document.getElementById("output").textContent = "";
 	const msg = document.getElementById("text").value;
 	const dly = document.getElementById("delay").value;
 	const button = document.getElementById("btn");
