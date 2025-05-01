@@ -13,7 +13,7 @@ async function fxn(){
 	await setTimeout(()=>{
 		// console.log("message: ", msg);
 		// console.log("Delay: ", dly);
-		document.getElementById("output").innerHTML = `${msg}`;
+		document.getElementById("output").textContent = msg;
 		// console.log(document.getElementById("output").textContent);
 	},dly*1000)
 }
