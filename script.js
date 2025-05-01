@@ -9,14 +9,9 @@ document.getElementById("output").textContent = "";
 	const msg = document.getElementById("text").value;
 	const dly = document.getElementById("delay").value;
 	const button = document.getElementById("btn");
-	// console.log("message: ", msg);
-	// console.log("Delay: ", dly);
-	await setTimeout(()=>{
-		// console.log("message: ", msg);
-		// console.log("Delay: ", dly);
-		document.getElementById("output").textContent = msg;
-		// console.log(document.getElementById("output").textContent);
-	},dly*1000)
+	
+	await new Promise(resolve => setTimeout(resolve, dly*1000));
+	document.getElementById("output").textContent = msg;
 }
 
 //dd dd
